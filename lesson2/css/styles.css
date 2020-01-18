@@ -1,0 +1,120 @@
+
+
+
+footer, header {
+    background-color: #0090C1;
+      padding: 1em;
+      color:white;
+      border-radius: 25px;
+      
+    }
+    
+    footer {
+        text-align: center;
+        padding-top: .001em;
+        padding-bottom: 1em;
+        font-family: 'arial', sans-serif;
+        color: black;
+    
+    }
+    
+
+    
+    .pic{
+        width: 93%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+    }
+  
+    .box {
+        background-color: lightgray;
+       
+        margin: 1em;
+        margin-left: .5em;
+        margin-right: .5em;
+        border-radius: 15px;
+        
+    }
+
+    .sectionHeader {
+        background-color: #0090C1;
+        
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: .01em;
+
+
+
+       
+    }
+    main {
+       
+        font-family: 'arial', sans-serif;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+    
+    font-size: 2.5em;
+    margin-top: .05em;
+    margin-bottom: 0em;
+    font-family: 'Cookie', cursive;
+    font-weight: 200;
+    text-align: center;
+    }
+    
+    h2{
+        font-family: 'Amatic SC', cursive;
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
+        
+    
+    }
+    
+    h3{
+        font-family: 'Amatic SC', cursive;
+        font-size: 1.5em;
+        margin-left: .5em;
+        margin-top: .25em;
+        margin-bottom: .25em;
+        color: white;
+        
+    }
+    
+    h4{
+        margin-left: .5em;
+        margin-bottom: .5em;
+        font-family: 'Crimson Text', serif;
+        font-size: 1.5em;
+        margin-top: .5em;
+    }
+    .example{
+        margin-left: .75em;
+        
+    }
+
+    p {
+        margin-left: .75em;
+        font-family: 'Crimson Text', serif;
+    }
+
+    #inline{
+        display: flex;
+        justify-content: center;
+    }
+    
+    body{
+       width: 97%;
+        margin: 1em auto;  
+        
+    }
+.footnote{
+    font-family: 'arial', sans-serif;
+    
+}
+  

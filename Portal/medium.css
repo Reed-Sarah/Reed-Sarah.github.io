@@ -1,0 +1,16 @@
+@media only screen and (min-width: 37.5em){
+    h1 {
+        font-size: 3.5em;
+        
+    }
+    
+   header {
+        display: flex;
+        justify-content: space-between;
+        height: 5em;
+    } 
+     
+    body {
+        width: 37.5em;
+    }
+}

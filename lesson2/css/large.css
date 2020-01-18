@@ -1,0 +1,17 @@
+@media only screen and (min-width: 1000px){
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    body{
+        width: 1000px;
+     }
+     h1 {
+        font-size: 5em;
+        
+    }
+
+    h2 {
+        font-size:2em;
+    }
+    
+}
