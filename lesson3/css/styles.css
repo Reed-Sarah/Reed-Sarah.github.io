@@ -1,0 +1,133 @@
+ul {
+    margin: .5em;
+    padding: 1em;
+    list-style-type: none;
+    background-color: #ff9326;
+    border-radius: 25px;
+    font-size: 1.25em;
+}
+
+
+
+
+nav a:hover
+{
+    color: #0090C1;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li {
+    display: flex;
+    margin: 1em;
+    
+}
+
+h1 {
+    font-family: 'Life Savers', cursive;
+    font-weight: 900;
+    letter-spacing: 2.5px;
+    font-size: 2em;
+}
+
+
+#logo {
+    height: 75px;
+    float: left;
+    margin-left: 1em;
+    margin-top: -1em;
+    margin-right: 3em;
+    
+
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    width: 95%;
+    padding: .5em;
+    background-color: #ededed;
+    margin: 1em auto;
+}
+
+
+
+footer, header {
+    background-color: #0090C1;
+      padding: 1em;
+      color:white;
+      border-radius: 25px;
+      
+    }
+    
+    footer {
+        text-align: center;
+        padding-top: .001em;
+        padding-bottom: 1em;
+        font-family: 'Muli', sans-serif;
+        color: black;
+    
+    }
+
+   
+
+    
+
+    #colorScheme{
+        width: 80%;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    #type{
+        width: 80%;
+        margin-bottom: 1em;
+    }
+
+    #inline{
+        display: flex;
+        justify-content: center;
+    }
+
+   h3, h4, p, #type, #chosenLogo, #colorScheme{
+        margin-left: .75em;
+    }
+
+    h3{
+        margin-left: .75em;
+    }
+    
+
+    @media only screen and (min-width: 1000px)
+    {
+       h4, p, #type, #chosenLogo, #colorScheme{
+           margin-left: 4.5em;
+           margin-right: 2em;
+       }
+
+       h3{
+           margin-left: 2.75em;
+       }
+
+        body{
+            width: 1000px;
+            
+        }
+
+        #logo
+        {
+            height: 150px;
+            margin-top: -2.7em;
+        }
+
+       nav li{
+           display: inline;
+       }
+
+       h1 {
+           font-size: 3em;
+       }
+    }
+   
