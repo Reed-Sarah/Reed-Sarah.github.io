@@ -46,8 +46,8 @@ h2{
 
 }
 
-#logo {
-    height: 150px;
+.logo {
+    height: 100px;
     float: left;
     margin-left: 1em;
     margin-top: 0em;
@@ -57,11 +57,12 @@ h2{
 }
 
 body {
+    margin: auto;
     font-family: 'Muli', sans-serif;
     width: 95%;
     padding: .5em;
     background-color: #ededed;
-    margin: 1em auto;
+    
 }
 
 
@@ -116,7 +117,7 @@ footer, header {
     {
        h4, p, #type, #chosenLogo, #colorScheme{
            margin-left: 4.5em;
-           margin-right: 2em;
+           margin-right: 2em; 
        }
 
        h3{
@@ -124,11 +125,11 @@ footer, header {
        }
 
         body{
-            width: 1000px;
+            max-width: 1000px;
             
         }
 
-        #logo
+        .logo
         {
             height: 150px;
             margin-top: -.75em;
@@ -142,4 +143,6 @@ footer, header {
            font-size: 3em;
        }
     }
+
+     
    
