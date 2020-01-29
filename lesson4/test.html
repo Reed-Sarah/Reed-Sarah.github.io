@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <title>It's Idaho Weather</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Homepage for weather site"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles-small.css">
+    <link rel="stylesheet" href="css/styles-medium.css">
+    <link rel="stylesheet" href="css/styles-large.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <div id="update"></div>
+<script>
+update = new Date(document.lastModified)
+theMonth = update.getMonth() 
+theDate = update.getDate()
+theYear = update.getFullYear()
+theDay = update.getDay()
+
+var daysInWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+var months = [ "January", "February", "March", "April", "May", "June", 
+           "July", "August", "September", "October", "November", "December" ];
+
+
+var dayWord = daysInWeek[theDay];
+var monthWord = months[theMonth];
+
+var x = dayWord + ", " + theDate + " " + monthWord + " " + theYear
+document.getElementById("update").innerHTML = x;
+</script>
+</body>
+</html>
