@@ -1,0 +1,117 @@
+/* Header */
+
+h1 {
+    font-family: 'Life Savers', cursive;
+    font-weight: 900;
+    letter-spacing: 2.5px;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 0em;
+
+}
+
+.motto {
+    
+    font-family: 'Life Savers', cursive;
+    font-weight: 900;
+    letter-spacing: 2.5px;
+    margin-top: 0em;
+    font-size: 1.5em;
+   
+}
+
+#logo {
+    height: 100px;
+    float: left;
+    margin-left: 1em;
+    margin-top: 0em;
+    margin-right: 3em;
+}
+header {
+    margin-bottom: 0em;
+}
+footer, header {
+    background-color: #0090C1;
+      padding: 1em;
+      color:white;
+      border-radius: 25px;
+      
+    }
+/* Navigation Bar */
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+    background-color: #ff9326;
+    border-radius: 25px;
+}
+.navigation {
+	list-style: none;
+	padding: 0em;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: #000000;
+	padding: 0.75rem;
+	text-align: center;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+.navigation a:hover {
+	color: #000;
+	background-color: #ededed;
+    font-weight: 700;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+	display: block;
+}
+/* Content */
+
+h3, h4, p{
+    margin-left: .75em;
+}
+
+body {
+    margin: auto;
+    font-family: 'Muli', sans-serif;
+    width: 95%;
+    padding: .5em;
+    
+}
+
+.contentBox {
+    background-color: #ededed; 
+    margin: 1em;
+    border-radius: 25px;
+    border-style: solid;
+}
+
+/* footer */
+
+#inline{
+    display: flex;
+    justify-content: center;
+}
+
+    
+    footer {
+        text-align: center;
+        padding-top: .001em;
+        padding-bottom: 1em;
+        font-family: 'Muli', sans-serif;
+        color: black;
+    }
+
+
+   
