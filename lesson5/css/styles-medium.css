@@ -1,15 +1,6 @@
 @media only screen and (min-width: 32.5em)
     {
-       h4, h3, p {
-           margin-left: 4.5em;
-           margin-right: 2em; 
-       }
-
-       h2{
-           margin-left: 1em;
-       }
-
-       
+     
 
         #logo
         {
@@ -40,5 +31,34 @@
 	.navigation li:first-child {
 		display: none;
 	}
-
+    td {
+        text-align: center;
     }
+    table td + td { border-left:2px solid; }
+
+    #forecast {
+        display: block;
+        align-content: center;
+        padding-bottom: 2em;
+        width: 90%;
+        margin: 1em auto;
+        
+    }
+
+    #articleWords {
+        width: 100%;
+    }
+  
+    #contactWords {
+        margin-top: 3em;
+        
+    }
+    
+    #map {
+        display: block;
+        width: 400px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 25px;
+        margin: 1em;
+    }
+}
