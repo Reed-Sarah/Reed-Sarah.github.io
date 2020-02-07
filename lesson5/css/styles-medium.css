@@ -30,7 +30,13 @@
 	
 	.navigation li:first-child {
 		display: none;
-	}
+    }
+    
+    #weatherSum {
+       
+       margin-left: 4em;
+       margin-top: 4em;
+    }
     td {
         text-align: center;
     }
@@ -43,6 +49,10 @@
         width: 90%;
         margin: 1em auto;
         
+    }
+
+    #articlePic{
+        width: 400px;
     }
 
     #articleWords {
