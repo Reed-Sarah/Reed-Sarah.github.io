@@ -114,13 +114,14 @@ body {
 }
  #summaryPic{
      width:100%;
-     margin: 1em, auto;
+     margin: 0em auto;
      border-radius: 25px;
  }
 
  #line {
      background-color: #ffffff;
      height: 2px;
+
      width: 100%;
      margin-bottom: .5em;
  }
