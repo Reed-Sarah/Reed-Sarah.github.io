@@ -103,7 +103,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 }
- figure {
+ .tile {
      display: block;
 background-color: #ededed; 
     margin: 1em;
