@@ -35,11 +35,11 @@ header {
 }
 
 footer, header {
-    background-color: #0090C1;
-      color:white;
-      border-radius: 25px;
-      
-    }
+    background-color:#0090C1;
+        color:white;
+        border-radius: 25px;
+}
+
 /* Navigation Bar */
 nav {
 	margin: 0 auto;
