@@ -1,3 +1,8 @@
+.headerFooter {
+    
+    background-color: #7fb9c2;
+}  
+
 tr:nth-child(even) {
     background-color: #e7ffed;
   }
@@ -5,50 +10,38 @@ tr:nth-child(odd) {
     background-color: #e7f0ed;
   }
 
-  thead, tfoot{
-      background-color: #628ca6;
-  }
-#labels, #title {
-    font-weight: 900;
-}
-  
 
-  #labels, #goalMet {
+  th, #goalMet {
       background-color: #628ca6;
       color: #fff;
   }
 
-  #italics {
+  
+ span {
       font-style: italic;
   }
- th, td{
+
+ th, td {
     padding: .4em;
  }
-    
-  
-   
 
+      
   table{
       text-align: center;
       font-family: 'Ubuntu', sans-serif;
         box-shadow: 9px 9px 9px #628ca6;
         background-color: lightgrey;
+  }
         
-     
-      
-      
-  }
-  #title, #footer {
-      background-color: #7fb9c2;
-  }
 
-  #footer {
+  tfoot {
     font-size: .75em;
 }
 
-#title {
+thead {
     font-size: 1.5em;
     padding: .25em;
+    font-weight: 900;
     
 }
 
