@@ -1,0 +1,55 @@
+tr:nth-child(even) {
+    background-color: #e7ffed;
+  }
+tr:nth-child(odd) {
+    background-color: #e7f0ed;
+  }
+
+  thead, tfoot{
+      background-color: #628ca6;
+  }
+#labels, #title {
+    font-weight: 900;
+}
+  
+
+  #labels, #goalMet {
+      background-color: #628ca6;
+      color: #fff;
+  }
+
+  #italics {
+      font-style: italic;
+  }
+ th, td{
+    padding: .4em;
+ }
+    
+  
+   
+
+  table{
+      text-align: center;
+      font-family: 'Ubuntu', sans-serif;
+        box-shadow: 9px 9px 9px #628ca6;
+        background-color: lightgrey;
+        
+     
+      
+      
+  }
+  #title, #footer {
+      background-color: #7fb9c2;
+  }
+
+  #footer {
+    font-size: .75em;
+}
+
+#title {
+    font-size: 1.5em;
+    padding: .25em;
+    
+}
+
+ 
