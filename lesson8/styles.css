@@ -11,13 +11,15 @@ tr:nth-child(odd) {
   }
 
 
-  th, #goalMet {
+  th, tr:nth-child(4) td:nth-child(3) {
       background-color: #628ca6;
       color: #fff;
   }
-
+th {
+    font-weight: 900;
+}
   
- span {
+ tr:nth-child(6) td:first-child{
       font-style: italic;
   }
 
