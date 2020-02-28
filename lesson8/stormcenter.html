@@ -35,7 +35,7 @@
                 <li> <a href="">Soda Springs</a></li>
                 <li> <a href="">Fish Haven</a></li>
                 <li> <a href="lesson8/stormcenter.html" class="active">Storm Center</a></li>
-                <li> <a href="">Gallery</a></li>
+                <li> <a href="https://reed-sarah.github.io/lesson7/weatherGallery/gallery.html">Gallery</a></li>
             </ul>
         </nav> 
         <div class ="content">
@@ -44,9 +44,10 @@
 
         <div class="contentBox">
             <h3>About You</h3>
+            <form  name="stormcenter" action="thanks.html">
             <fieldset>
                 <label>Full Name: 
-                    <input type="text" name="name" placeholder="Your Name" pattern="regexp" pattern="[A-Za-z]{5,}" required> 
+                    <input type="text" name="name" placeholder="Your Name" pattern="[A-Za-z ]{5,}" required> 
                         </label><br>
             <label>Phone: 
                 <input type="tel" name="phone" placeholder="###-###-####">
@@ -108,20 +109,20 @@
                 <form method="post" action="#">
                     <fieldset>
                         <label>Additional Comments:
-                       <input type="textarea" size="60" name="comments" required pattern="[A-Za-z]{500}">
+                       <input type="textarea" size="60" name="comments" pattern="[A-Za-z]+">
                         </label>
                     </fieldset>
                     <fieldset>
 
                        
                         <div id="submit">
-                            <input id="submit" type="submit" value="Submit" 
-                              onclick="window.location.href = 'thanks.html'" />
+                            <input id="submit" type="submit" 
+                               />
                         </div>
 
                         
                     </fieldset>
-            
+            </form>
                 </div>
 
        

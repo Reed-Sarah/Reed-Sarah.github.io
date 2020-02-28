@@ -13,23 +13,5 @@ h1 {
     
 }
 
-#summaryPic{
-    width:940px;
-}
 
-#articleWords {
-    width: 45%;
-}
-
-#contactWords {
-   
-    margin-right: 7em;
-}
-#contact
-{
-    justify-content: space-between;
-}
-#forecast {
-    width: 700px;
-}
 }
