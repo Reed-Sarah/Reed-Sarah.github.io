@@ -46,22 +46,29 @@
             <h3>About You</h3>
             <form  name="stormcenter" action="thanks.html">
             <fieldset>
+                <div class="formBox">
+                    <div class="formSubBox">
                 <label>Full Name: 
                     <input type="text" name="name" placeholder="Your Name" pattern="[A-Za-z ]{5,}" required> 
                         </label><br>
             <label>Phone: 
                 <input type="tel" name="phone" placeholder="###-###-####">
                     </label><br>
+                </div>
+                <div class="formSubBox">
                     <label for="email">eMail:
                 <input type="email" name="email" placeholder="user@email.org"></label><br>
                 <label for="num">Zip Code:
                     <input type="number" id="num" name="num" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep"></label><br>
-                    
+               </div>
+            </div>     
         </fieldset>
     </div>
 
         <div class="contentBox" > 
             <h3>About the Storm</h3>
+            <div class="formBox">
+                <div class="formSubBox">
             <fieldset>
                 <label for="theDate">Storm Date:
                     <input type="date" name="theDate"></label><br> 
@@ -75,12 +82,11 @@
                             <option value="Tornado"></option>
                         </datalist><br>
             
-            
-
                         <label class="flexly" for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;
                             <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                                     <span id="ratingvalue">5</span>
-                            </label><br>
+                            </label><br></div>
+                            <div class="formSubBox">
                             <label for="region">Select a Region:</label>
 
                             <select id="region">
