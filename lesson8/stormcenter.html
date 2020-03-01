@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
     <title>It's Idaho Weather</title>
     <meta charset="utf-8">
-    <meta name="description" content="Preston Town Page"/>
+    <meta name="description" content="Preston Town Page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles-small.css">
@@ -13,139 +13,150 @@
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Life+Savers&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
-    
+
 </head>
 
 <body>
-   
-  <header>
-     <div id="menu"> <img id="logo" src="images/weather-icon-reduced.png" alt="it's idaho weather's logo"></div>
-     <div id="headerWords">
-   <h1>It's Idaho Weather</h1>
-   <div class ="motto">The Sun Will Shine</div></div>
-   
-       
+
+    <header>
+        <div id="menu"> <img id="logo" src="images/weather-icon-reduced.png" alt="it's idaho weather's logo"></div>
+        <div id="headerWords">
+            <h1>It's Idaho Weather</h1>
+            <div class="motto">The Sun Will Shine</div>
+        </div>
+
+
     </header>
-  <main>
-   <nav>
+    <main>
+        <nav>
             <ul class="navigation">
                 <li><a class="ham" href="#">&#9776; Menu</a></li>
                 <li> <a href="">Home</a></li>
-                <li> <a href="https://reed-sarah.github.io/lesson5/preston-5.html" >Preston</a></li>
+                <li> <a href="https://reed-sarah.github.io/lesson5/preston-5.html">Preston</a></li>
                 <li> <a href="">Soda Springs</a></li>
                 <li> <a href="">Fish Haven</a></li>
                 <li> <a href="lesson8/stormcenter.html" class="active">Storm Center</a></li>
                 <li> <a href="https://reed-sarah.github.io/lesson7/weatherGallery/gallery.html">Gallery</a></li>
             </ul>
-        </nav> 
-        <div class ="content">
-        <h2>Idaho Storm Center</h2>
-        
+        </nav>
+        <div class="content">
+            <h2>Idaho Storm Center</h2>
 
-        <div class="contentBox">
-            <h3>About You</h3>
-            <form  name="stormcenter" action="thanks.html">
-            <fieldset>
+
+            <div class="contentBox">
+                <h3>About You</h3>
+                <form name="stormcenter" action="thanks.html">
+                    <fieldset>
+                        <div class="formBox">
+                            <div class="formSubBox">
+                                <label>Full Name:<br>
+                                    <input type="text" name="name" placeholder="Your Name" pattern="[A-Za-z ]{5,}"
+                                        required>
+                                </label><br>
+                                <label>Phone:<br>
+                                    <input type="tel" name="phone" placeholder="###-###-####">
+                                </label><br>
+                            </div>
+                            <div class="formSubBox">
+                                <label for="email">eMail:<br>
+                                    <input type="email" name="email" placeholder="user@email.org"></label><br>
+                                <label for="num">Zip Code:<br>
+                                    <input type="number" id="num" name="num" pattern="(\d{5}([\-]\d{4})?)"
+                                        autocomplete="shipping postal-codep"></label><br>
+                            </div>
+                        </div>
+                    </fieldset>
+            </div>
+
+            <div class="contentBox">
+                <h3>About the Storm</h3>
                 <div class="formBox">
                     <div class="formSubBox">
-                <label>Full Name: 
-                    <input type="text" name="name" placeholder="Your Name" pattern="[A-Za-z ]{5,}" required> 
-                        </label><br>
-            <label>Phone: 
-                <input type="tel" name="phone" placeholder="###-###-####">
-                    </label><br>
-                </div>
-                <div class="formSubBox">
-                    <label for="email">eMail:
-                <input type="email" name="email" placeholder="user@email.org"></label><br>
-                <label for="num">Zip Code:
-                    <input type="number" id="num" name="num" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep"></label><br>
-               </div>
-            </div>     
-        </fieldset>
-    </div>
-
-        <div class="contentBox" > 
-            <h3>About the Storm</h3>
-            <div class="formBox">
-                <div class="formSubBox">
-            <fieldset>
-                <label for="theDate">Storm Date:
-                    <input type="date" name="theDate"></label><br> 
-                    <label for="stormType">Storm Type: 
-                        <input name="stormType" list="stormOptions"></label>
+                        <fieldset>
+                            <label for="theDate">Storm date:<br>
+                                <input type="date" name="theDate"></label><br>
+                            <label for="stormType">Storm type:<br>
+                                <input name="stormType" list="stormOptions"></label>
                             <datalist id="stormOptions">
-                            <option value="Flash Flood">
-                        <option value="Hail">
-                      <option value="Hurricane">
-                        <option value="Thunderstorm">
-                            <option value="Tornado"></option>
-                        </datalist><br>
-            
-                        <label class="flexly" for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;
-                            <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                                    <span id="ratingvalue">5</span>
-                            </label><br></div>
-                            <div class="formSubBox">
-                            <label for="region">Select a Region:</label>
+                                <option value="Flash Flood">
+                                <option value="Hail">
+                                <option value="Hurricane">
+                                <option value="Thunderstorm">
+                                <option value="Tornado"></option>
+                            </datalist><br>
 
-                            <select id="region">
-                                <option value="default" disabled>Select Region...</option>
-                              <option value="preston">Preston</option>
-                              <option value="fishHaven">Fish Haven</option>
-                              <option value="sodaSprings">Soda Springs</option>
-                              
-                            </select></fieldset>
-                    <fieldset>        
-                        <legend>Are you in danger? <em>(Choose one)</em></legend>
-			<div class="selection">
-				<label for="yes"><input type="radio" id="yes" name="danger" value="yes" checked> Yes</label>
-			</div>
-			<div class="selection">
-				<label for="maybe"><input type="radio" id="maybe" name="danger" value="maybe">Maybe</label>
-			</div>
-			<div class="selection">
-				<input type="radio" id="no" name="danger" value="no">
-				<label for="no">No</label>
-			</div>
-		
+                            <label class="flexly" for="rating">Storm severity:<br> &nbsp;&nbsp;&nbsp;
+                                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                                <span id="ratingvalue">5</span>
+                            </label><br>
+                    </div>
+                    <div class="formSubBox">
+                        <label for="region">Select a region:</label><br>
 
-            </fieldset>
-            <div class="dangerradiobox">
-                <form method="post" action="#">
-                    <fieldset>
-                        <label>Additional Comments:
-                       <input type="textarea" size="60" name="comments" pattern="[A-Za-z]+">
-                        </label>
-                    </fieldset>
-                    <fieldset>
+                        <select id="region">
+                            <option value="default" disabled>Select region...</option>
+                            <option value="preston">Preston</option>
+                            <option value="fishHaven">Fish Haven</option>
+                            <option value="sodaSprings">Soda Springs</option>
 
-                       
-                        <div id="submit">
-                            <input id="submit" type="submit" 
-                               />
+                        </select></fieldset>
+                        <fieldset>
+                            <legend>Are you in danger? <em>(Choose one)</em></legend>
+                            <div class="selection">
+                                <label for="yes"><input type="radio" id="yes" name="danger" value="yes" checked>
+                                    Yes</label>
+                            </div>
+                            <div class="selection">
+                                <label for="maybe"><input type="radio" id="maybe" name="danger"
+                                        value="maybe">Maybe</label>
+                            </div>
+                            <div class="selection">
+                                <input type="radio" id="no" name="danger" value="no">
+                                <label for="no">No</label>
+                            </div>
+
+
+                        </fieldset>
+                        <div class="dangerradiobox">
+                            <form method="post" action="#">
                         </div>
-
-                        
-                    </fieldset>
-            </form>
+                    </div>
                 </div>
+                <fieldset>
+                    <label id="comment">Additional comments:<br>
+                        <input type="textarea" size="40" name="comments" pattern="[A-Za-z]+">
+                    </label>
+                </fieldset>
+                <fieldset>
 
-       
+
+                    <div id="submit">
+                        <input id="submit" type="submit">
+                    </div>
+
+                </fieldset>
+                </form>
+
+
+            </div>
         </div>
-   </div>     
-  </main>
-  <footer>
-     <p>&copy; 2020 | Sarah Reed | Arizonia | <a href="https://www.byui.edu/online">BYUI Online Learning</a> </p> 
-     <div id=inline>
-  <div>Last Updated:&nbsp; </div>
-   <div id=update></div></div>
-   
-    
-  </footer>
 
-  <script src="js/menu.js"></script>
-<script src="js/modified.js"></script>
-<script src="js/form"></script>
+
+    </main>
+    <footer>
+        <p>&copy; 2020 | Sarah Reed | Arizonia | <a href="https://www.byui.edu/online">BYUI Online Learning</a> </p>
+        <div id=inline>
+            <div>Last Updated:&nbsp; </div>
+            <div id=update></div>
+        </div>
+
+
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/modified.js"></script>
+    <script src="js/form.js"></script>
 </body>
+
 </html>

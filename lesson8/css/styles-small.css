@@ -107,7 +107,7 @@ body {
     margin: 1em;
     border-radius: 25px;
     border-style: solid;
-    text-align: left;
+    text-align: center;
     padding-left: 1em;
     padding-right: 1em;
    padding-bottom: 1em;
@@ -125,6 +125,9 @@ fieldset {
     border: none;
 }
 
+input {
+    text-align: center;
+}
 
 /* footer */
 
