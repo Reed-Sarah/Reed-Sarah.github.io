@@ -42,10 +42,10 @@
         <div class="content">
             <h2>Idaho Storm Center</h2>
 
+            <form name="stormcenter" action="thanks.html">
+                <div class="contentBox">
+                    <h3>About You</h3>
 
-            <div class="contentBox">
-                <h3>About You</h3>
-                <form name="stormcenter" action="thanks.html">
                     <fieldset>
 
                         <label>Full Name:<br>
@@ -61,69 +61,68 @@
                         <label for="num">Zip Code:<br>
                             <input type="number" id="num" name="num" required></label><br>
                     </fieldset>
-            </div>
-
-            <div class="contentBox">
-                <h3>About the Storm</h3>
-
-
-                <fieldset>
-                    <label for="theDate">Storm date:<br>
-                        <input type="date" name="theDate" id="theDate"></label><br>
-                    <label for="stormType">Storm type:<br>
-                        <input name="stormType" list="stormOptions" id="stormType"></label>
-                    <datalist id="stormOptions">
-                        <option value="Flash Flood">
-                        <option value="Hail">
-                        <option value="Hurricane">
-                        <option value="Thunderstorm">
-                        <option value="Tornado"></option>
-                    </datalist><br>
-                    <label class="flexly" for="rating">Storm severity:<br> &nbsp;&nbsp;&nbsp;
-                        <input type="range" id="rating" value="5" min="1" max="10" step="1" 
-                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id="ratingvalue">5</span>
-                    </label><br>
-                </fieldset>
-                <fieldset>
-                    <label for="region">Select a region:</label><br>
-
-                    <select id="region">
-                        <option value="default" disabled>Select region...</option>
-                        <option value="preston">Preston</option>
-                        <option value="fishHaven">Fish Haven</option>
-                        <option value="sodaSprings">Soda Springs</option>
-
-                    </select>
-                </fieldset>
-                <fieldset>
-                    <legend>Are you in danger? <em>(Choose one)</em></legend>
-                    <div class="selection">
-                        <label for="yes"><input type="radio" id="yes" name="danger" value="yes" checked>
-                            Yes</label>
-                    </div>
-                    <div class="selection">
-                        <label for="maybe"><input type="radio" id="maybe" name="danger" value="maybe">Maybe</label>
-                    </div>
-                    <div class="selection">
-                        <input type="radio" id="no" name="danger" value="no">
-                        <label for="no">No</label>
-                    </div>
-               </fieldset>
-                <div class="dangerradiobox">
-                    <form method="post" action="#">
                 </div>
-                <fieldset>
-                    <label>Additional Comments:</label><br>
-                    <textarea name="comment" >Enter text here...</textarea>
-                </fieldset>
-                <fieldset>
-                    <div id="submitButton">
-                        <input id="submit" type="submit">
+
+                <div class="contentBox">
+                    <h3>About the Storm</h3>
+
+
+                    <fieldset>
+                        <label for="theDate">Storm date:<br>
+                            <input type="date" name="theDate" id="theDate"></label><br>
+                        <label for="stormType">Storm type:<br>
+                            <input name="stormType" list="stormOptions" id="stormType"></label>
+                        <datalist id="stormOptions">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado"></option>
+                        </datalist><br>
+                        <label class="flexly" for="rating">Storm severity:<br> &nbsp;&nbsp;&nbsp;
+                            <input type="range" id="rating" value="5" min="1" max="10" step="1"
+                                oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">5</span>
+                        </label><br>
+                    </fieldset>
+                    <fieldset>
+                        <label for="region">Select a region:</label><br>
+
+                        <select id="region">
+                            <option value="default" disabled>Select region...</option>
+                            <option value="preston">Preston</option>
+                            <option value="fishHaven">Fish Haven</option>
+                            <option value="sodaSprings">Soda Springs</option>
+
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Are you in danger? <em>(Choose one)</em></legend>
+                        <div class="selection">
+                            <label for="yes"><input type="radio" id="yes" name="danger" value="yes" checked>
+                                Yes</label>
+                        </div>
+                        <div class="selection">
+                            <label for="maybe"><input type="radio" id="maybe" name="danger" value="maybe">Maybe</label>
+                        </div>
+                        <div class="selection">
+                            <input type="radio" id="no" name="danger" value="no">
+                            <label for="no">No</label>
+                        </div>
+                    </fieldset>
+                    <div class="dangerradiobox">
+                        <form method="post" action="#">
                     </div>
-                </fieldset>
-                </form>
-            </div>
+                    <fieldset>
+                        <label>Additional Comments:</label><br>
+                        <textarea name="comment">Enter text here...</textarea>
+                    </fieldset>
+                    <fieldset>
+                        <div id="submitButton">
+                            <input id="submit" type="submit">
+                        </div>
+                    </fieldset>
+            </form>
         </div>
     </main>
     <footer>
