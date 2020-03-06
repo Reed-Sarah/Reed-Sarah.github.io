@@ -91,6 +91,12 @@ h2 {
     text-align: center;
 }
 
+h4 {
+    
+    font-style: italic;
+
+}
+
 body {
     margin: auto;
     font-family: 'Muli', sans-serif;

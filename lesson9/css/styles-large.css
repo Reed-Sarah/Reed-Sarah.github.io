@@ -20,13 +20,20 @@
     border-bottom-right-radius: 23px;
     border-top-right-radius: 0px;  
     border-top-left-radius: 0px;
-    margin-bottom: -4px;
+    
     margin-right: 0px;
     margin-left: 0px;
+    align-self: flex-end;
+    
+
     }
 
     .contentBox {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        
         
     }
+
+    
 }
