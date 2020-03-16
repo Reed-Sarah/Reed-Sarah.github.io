@@ -50,8 +50,11 @@ fetch(apiURL)
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';  // note the concatenation
 const desc = jsObject.list[i].weather[0].description;  // note how we reference the weather array
 var iconId = "icon" + j;
-document.getElementById(iconId).setAttribute('src', imagesrc);  // focus on the setAttribute() method
-document.getElementById(iconId).setAttribute('alt', desc); 
+let image =  document.createElement('img');
+image.setAttribute('src', imagesrc);  // focus on the setAttribute() method
+image.setAttribute('alt', desc);
+image.className = "icon";
+document.querySelector('#' + iconId).appendChild(image); 
 j++; 
     }
   
