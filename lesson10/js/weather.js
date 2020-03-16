@@ -2,7 +2,7 @@ var apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=d
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    
 
     var windSpeed = jsObject.wind.speed;
     var temp = jsObject.main.temp;
@@ -37,7 +37,7 @@ fetch(apiURL)
     while ( i < 40 && j <= 5) 
     {
        var dayId = "day" + j;
-       console.log(day)
+       
        
         document.getElementById(dayId).textContent = week[((day + j) % 7)]; 
         
