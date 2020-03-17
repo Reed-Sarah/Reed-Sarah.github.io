@@ -1,0 +1,74 @@
+@media only screen and (min-width: 700px)
+    {
+    
+        #logo
+        {
+            height: 150px;
+            margin-top: -1.5em;
+        }
+
+       nav li {
+           text-align: center;
+       }
+
+       
+       h1 {
+           font-size: 2.5em;
+       }
+
+       .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		color: #000000;
+	}
+	
+	.navigation li:first-child {
+		display: none;
+    }
+ 
+    .contentBox {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+.contentBox img {
+    width: 55%;
+    height: auto;
+    margin-bottom: 0px;
+    
+     } 
+
+     #fishHavenPic, #prestonPic {
+       border-left-style: solid;
+    border-width: .5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 23px;
+    border-top-right-radius: 23px;  
+    
+     }
+
+     #sodaSpringsPic {
+    border-right-style: solid;
+     border-width: .5px;
+     border-bottom-left-radius: 23px;
+     border-bottom-right-radius: 0px;
+     border-top-left-radius: 23px;  
+     
+      }
+
+     #midRow{
+        flex-direction: row-reverse;
+     }
+     .text {
+      
+         width:100%;
+         padding-top: 3%;
+       
+        
+     }
+   }

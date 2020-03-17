@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <title>It's Idaho Weather</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Preston Town Page"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles-small.css">
+    <link rel="stylesheet" href="css/styles-medium.css">
+    <link rel="stylesheet" href="css/styles-large.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+</head>
+
+<body>
+ 
+    
+  <header>
+     <div id="menu"> <img id="logo" src="images/weather-icon-reduced.png" alt="it's idaho weather's logo"></div>
+     <div id="headerWords">
+   <h1>It's Idaho Weather</h1>
+   <div class ="motto">The Sun Will Shine</div></div>
+   
+       
+    </header>
+  <main>
+   <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li> <a href="../Home/index.html">Home</a></li>
+                <li> <a href="../Preston/preston.html">Preston</a></li>
+                <li> <a href="../sodaSprings/sodaSprings.html">Soda Springs</a></li>
+                <li> <a href="../fishHaven/fishHaven.html" class="active" >Fish Haven</a></li>
+                <li> <a href="../stormCenter/stormCenter.html">Storm Center</a></li>
+                <li> <a href="../Gallery/gallery.html">Gallery</a></li>
+            </ul>
+        </nav> 
+        <div class ="content">
+        <h2>Fish Haven Idaho</h2>
+        <div>
+            <div id="weatherSum">
+                <h3>Weather Summary</h3>
+                <div id="line"></div>
+                <div id="list">
+                <div id="sumFirst">Currently:<br>Temperature:<br>Wind Chill:<br>Humidity:<br>Wind Speed:</div>
+                <div id= "sumSec"><span id="current"></span><br><span id="temp"></span>&#00176;F<br><span id="windChill"></span><br><span id="humidity"></span>%<br><span id="windSpeed"></span>mph</div>
+            </div></div>
+            
+            <img id="summaryPic" src="images/FishHavenBanner960.jpg" alt="Green field near hills" sizes = "95vw"
+            srcset="images/FishHavenBanner500.jpg 500w,
+                    images/FishHavenBanner750.jpg 750w,
+                   images/FishHavenBanner960.jpg 960w">
+        </div>
+
+        <div class="contentBox" id="forecast">
+            <h3>5 Day Forecast</h3>
+            <table style="width:100%">
+                <tr>
+                  <th id="day0"></th>
+                  <th id="day1"></th>
+                  <th id="day2"></th>
+                  <th id="day3"></th>
+                  <th id="day4"></th>
+                </tr>
+                <tr>
+                    <td><div  id="icon0"></div></td>
+                    <td><div  id="icon1" ></div></td>
+                    <td><div id="icon2" ></div></td>
+                    <td><div  id="icon3" ></div></td>
+                    <td><div  id="icon4"></div></td>
+                </tr>
+                <tr>
+                  <td id="temp0">&#0176; </td>
+                  <td id="temp1">&#0176;</td>
+                  <td id="temp2">&#0176;</td>
+                  <td id="temp3">&#0176; </td>
+                  <td id="temp4">&#0176;</td>
+                </tr>
+              </table>
+        </div>
+
+        <div class="contentBox" > 
+            <h3>Snow Shoeing Tips in Idaho</h3>
+            <h4>Source: Idaho Statesman</h4>
+            <div id="articleBox">
+                <div class="articleWords">
+                 <p >Pack well: You’ll work harder than you think, so make sure you have plenty of water and food 
+                     for the day. Among the items you should carry: a second pair of gloves, whistle, headlamp with extra batteries, 
+                     sunscreen, maps, sunglasses, GPS to mark your starting location, lighter, fire starter and handwarmers. Good leg 
+                     gaiters also are necessary if you’re going into the powder. And don’t forget your poles.</p><p>
+
+                    Dress in layers: If you dress for the cold, you’ll be peeling off clothes quickly.</p>
+                    
+                   <p>Don’t go alone: I went on one group outing on which two people fell into deep snow and needed assistance getting 
+                    back on their feet. Simple incidents like that can become serious if nobody else is around.
+                    </p> <p>
+                    Powder is where the fun is: Snowshoe trails, Leo Hennessy of Idaho State Parks and Recreation explains, are for climbing. 
+                    Powder is for downhill. On gentle slopes, try running with short, choppy steps like you’re riding a bicycle. For steeper slopes, 
+                    you’ll need to slide — put one foot forward, toe up, and shift your weight back. If you’re good, you’ll slide. If not, you’ll 
+                    fall on your rear and slide like a kid. Either way, it’s a good time. Also, going downhill, fresh tracks are slick. Make your 
+                    own trail. When you’re on flat ground or climbing, rotate trail-breakers to spread the considerable workload and follow in your 
+                    friends’ footsteps. Try to avoid wet, heavy snow and make sure you know where the groomed trails are so you don’t get lost.
+                    </p >
+                    <p>
+                    Buying: “First of all, I’d buy a brand name, a common one,” Hennessy said. “And I wouldn’t buy the lowest-quality one in 
+                    any of the brands. I’d buy the middle or the upper. If you can put a snowshoe on without taking your gloves off, it’s a pretty 
+                    good snowshoe. ... If you’re buying, maybe get the medium size. If you’re going to rent them, if there’s big powder, go for the 
+                    bigger size. They have better flotation.” </p></div>  
+                <img id="articlePic" src="images/SnowShoeing.jpg" alt="man Snow shoeing looking towards mountain">
+        </div></div>
+
+        <div class="contentBox">
+            <h3>Contact Information</h3> 
+            <div id="contact">
+                <img id="map" src="images/map.jpg" alt="map of idaho">
+                <div id="contactWords"> 
+                    <h4>It's Idaho Weather Home Office</h4>
+                365 Windy Way<br>
+                Preston ID, 83456<br><br> 208-523-5643<br>itsidahoweather@gmail.com </div>
+            </div>
+        </div>
+   </div>     
+  </main>
+  <footer>
+     <p>&copy; 2020 | Sarah Reed | Arizonia | <a href="https://www.byui.edu/online">BYUI Online Learning </a>
+        <br>Weather information Provided by: <a href="https://openweathermap.org/">Open Weather</a> <br>Last Updated:&nbsp; <span id=update></span></p>   
+  </footer>
+
+  <script src="js/menu.js"></script>
+<script src="js/modified.js"></script>
+<script src="js/pancake.js"></script>
+<script src="js/weather.js"></script>
+
+
+</body>
+
+</html>

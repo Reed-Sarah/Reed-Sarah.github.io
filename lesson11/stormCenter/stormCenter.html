@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>It's Idaho Weather</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Storm Center Form" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles-small.css">
+    <link rel="stylesheet" href="css/styles-medium.css">
+    <link rel="stylesheet" href="css/styles-large.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+
+    <header>
+        <div id="menu"> <img id="logo" src="images/weather-icon-reduced.png" alt="it's idaho weather's logo"></div>
+        <div id="headerWords">
+            <h1>It's Idaho Weather</h1>
+            <div class="motto">The Sun Will Shine</div>
+        </div>
+
+
+    </header>
+    <main>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li> <a href="../Home/index.html">Home</a></li>
+                <li> <a href="../Preston/preston.html">Preston</a></li>
+                <li> <a href="../sodaSprings/sodaSprings.html">Soda Springs</a></li>
+                <li> <a href="../fishHaven/fishHaven.html"  >Fish Haven</a></li>
+                <li> <a href="../stormCenter/stormCenter.html" class="active">Storm Center</a></li>
+                <li> <a href="../Gallery/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h2>Idaho Storm Center</h2>
+
+            <form name="stormcenter" action="thanks.html">
+                <div class="contentBox">
+                    <h3>About You</h3>
+
+                    <fieldset>
+
+                        <label>Full Name:<br>
+                            <input type="text" name="name" placeholder="Your Name" pattern="[A-Za-z ]{5,}" required>
+                        </label><br>
+                        <label>Phone:<br>
+                            <input type="tel" name="phone" placeholder="###-###-####" required>
+                        </label><br>
+
+
+                        <label for="email">eMail:<br>
+                            <input type="email" name="email" id="email" placeholder="user@email.org"></label><br>
+                        <label for="num">Zip Code:<br>
+                            <input type="number" id="num" name="num" required></label><br>
+                    </fieldset>
+                </div>
+
+                <div class="contentBox">
+                    <h3>About the Storm</h3>
+
+
+                    <fieldset>
+                        <label for="theDate">Storm date:<br>
+                            <input type="date" name="theDate" id="theDate"></label><br>
+                        <label for="stormType">Storm type:<br>
+                            <input name="stormType" list="stormOptions" id="stormType"></label>
+                        <datalist id="stormOptions">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado"></option>
+                        </datalist><br>
+                        <label class="flexly" for="rating">Storm severity:<br> &nbsp;&nbsp;&nbsp;
+                            <input type="range" id="rating" value="5" min="1" max="10" step="1"
+                                oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">5</span>
+                        </label><br>
+                    </fieldset>
+                    <fieldset>
+                        <label for="region">Select a region:</label><br>
+
+                        <select id="region">
+                            <option value="default" disabled>Select region...</option>
+                            <option value="preston">Preston</option>
+                            <option value="fishHaven">Fish Haven</option>
+                            <option value="sodaSprings">Soda Springs</option>
+
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Are you in danger? <em>(Choose one)</em></legend>
+                        <div class="selection">
+                            <label for="yes"><input type="radio" id="yes" name="danger" value="yes" checked>
+                                Yes</label>
+                        </div>
+                        <div class="selection">
+                            <label for="maybe"><input type="radio" id="maybe" name="danger" value="maybe">Maybe</label>
+                        </div>
+                        <div class="selection">
+                            <input type="radio" id="no" name="danger" value="no">
+                            <label for="no">No</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label>Additional Comments:<br>
+                        <textarea name="comment">Enter text here...</textarea>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <div id="submitButton">
+                            <input id="submit" type="submit" value="Submit">
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2020 | Sarah Reed | Arizonia | <a href="https://www.byui.edu/online">BYUI Online Learning</a> </p>
+        <div id=inline>
+            <div>Last Updated:&nbsp; </div>
+            <div id=update></div>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/modified.js"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>

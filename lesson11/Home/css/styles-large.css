@@ -1,0 +1,39 @@
+@media only screen and (min-width: 960px)
+{
+    h1 {
+        font-size: 3em;
+        
+    }
+    .content{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #prestonPic, #fishHavenPic, #sodaSpringsPic
+    {
+    width: 100%;
+    border-top-style: solid;
+    border-width: 1px;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+    border-top-right-radius: 0px;  
+    border-top-left-radius: 0px;
+    
+    margin-right: 0px;
+    margin-left: 0px;
+    align-self: flex-end;
+    
+
+    }
+
+    .contentBox {
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    
+}

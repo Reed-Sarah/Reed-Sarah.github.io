@@ -1,0 +1,78 @@
+@media only screen and (min-width: 32.5em)
+    {
+     
+
+        #logo
+        {
+            height: 150px;
+            margin-top: -1.5em;
+        }
+
+       nav li {
+           text-align: center;
+       }
+
+       
+       h1 {
+           font-size: 2.5em;
+       }
+
+       .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		color: #000000;
+	}
+	
+	.navigation li:first-child {
+		display: none;
+    }
+    
+    #weatherSum {
+       
+       margin-left: 4em;
+       margin-top: 4em;
+    }
+    td {
+        text-align: center;
+    }
+    table td + td { border-left:2px solid; }
+
+    table {
+        margin-left: auto;
+    }
+
+    #forecast {
+        display: block;
+        align-content: center;
+        padding-bottom: 2em;
+        width: 90%;
+        margin: 1em auto;
+        
+    }
+
+    #articlePic{
+        width: 400px;
+    }
+
+    #articleWords {
+        width: 100%;
+    }
+  
+    #contactWords {
+        margin-top: 3em;
+        
+    }
+    
+    #map {
+        display: block;
+        width: 400px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 25px;
+        margin: 1em;
+    }
+}

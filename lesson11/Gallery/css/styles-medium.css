@@ -1,0 +1,38 @@
+@media only screen and (min-width: 32.5em)
+    {
+     
+
+        #logo
+        {
+            height: 150px;
+            margin-top: -1.5em;
+        }
+
+       nav li {
+           text-align: center;
+       }
+
+       
+       h1 {
+           font-size: 2.5em;
+       }
+
+       .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		color: #000000;
+	}
+	
+	.navigation li:first-child {
+		display: none;
+    }
+
+    #gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+    }
