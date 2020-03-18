@@ -102,6 +102,41 @@ body {
     
 }
 
+#border {
+    background-color: #0090C1;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: auto;
+    border-radius: 25px;
+   margin-top: 1em;
+}
+
+#upcomingEvents{
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #ffffff;
+    color: #ffffff;
+    
+}
+
+#eventLine {
+    background-color: white;
+    height: 1.5px;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+
 .contentBox {
     background-color: #ededed; 
     margin: 1em;
