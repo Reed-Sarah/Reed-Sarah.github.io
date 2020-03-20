@@ -136,7 +136,13 @@ input {
     justify-content: center;
 }
 
-    
+footer a:link, footer a:hover {
+    color: #ffffff;
+}
+
+footer a:visited {
+    color: black;
+}   
     footer {
         text-align: center;
         padding-top: .001em;

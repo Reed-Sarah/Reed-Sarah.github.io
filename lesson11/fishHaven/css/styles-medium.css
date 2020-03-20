@@ -54,7 +54,10 @@
         margin: 1em auto;
         
     }
-
+    #border {
+        width: 400px;
+    }
+    
     #articlePic{
         width: 400px;
     }

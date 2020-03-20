@@ -46,6 +46,10 @@
         margin-left: auto;
     }
 
+    #border {
+        width: 400px;
+    }
+
     #forecast {
         display: block;
         align-content: center;

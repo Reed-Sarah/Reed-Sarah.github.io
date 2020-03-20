@@ -103,7 +103,7 @@ body {
 }
 #border {
     background-color: #0090C1;
-    width: 400px;
+    width: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     padding-top: 1em;
@@ -120,13 +120,14 @@ body {
     border-style: solid;
     border-color: #ffffff;
     color: #ffffff;
+    font-weight: bold;
     
 }
 
 #eventLine {
     background-color: white;
     height: 1.5px;
-    width: 300px;
+    width: 85%;
     display: block;
     margin: auto;
 }
@@ -234,7 +235,13 @@ h3 {
     justify-content: center;
 }
 
-    
+footer a:link, footer a:hover {
+    color: #ffffff;
+}
+
+footer a:visited {
+    color: black;
+}  
     footer {
         text-align: center;
         padding-top: .001em;
