@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <title>Salmon River Adventures - Reservations</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Provides information about salmon river adventure's trip and a form to book trip"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/reservations.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+ 
+    
+  <header>
+      <img id="logo" src="images/salmonLogo.png" alt="Salmon River Adventures Logo">
+      <h1>Salmon River<br>Adventures</h1>
+     
+    <div id="backgroundBanner">
+     <div id="opacity"></div>
+     <img id="banner" src="images/salmonBanner.jpg" alt="mountain scene with river" sizes = "95vw"
+                srcset="images/salmonBanner500.jpg 500w,
+                        images/salmonBanner750.jpg 750w,
+                       images/salmonBanner960.jpg 960w">
+  </div>
+    </header>
+  <main>
+   <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li> <a href="index.html" >Home</a></li>
+                <li> <a href="riverGuides.html">River Guides</a></li>
+                <li> <a href="reservations.html" class="active">Reservations</a></li>
+                <li> <a href="contactUs.html" >Contact Us</a></li>
+            </ul>
+        </nav> 
+        <h2>Reservations</h2> 
+        <div id="weatherSum">
+        <h3>Riggins, Idaho</h3>
+        <div id="line"></div>
+        <div id="list">
+        <div id="sumFirst">Currently:<br>Temperature:<br>Wind Chill:<br>Humidity:<br>Wind Speed:</div>
+        <div id= "sumSec"><span id="current"></span><br><span id="temp"></span>&#00176;F<br><span id="windChill"></span><br><span id="humidity"></span>%<br><span id="windSpeed"></span>mph</div>
+    </div></div>
+    <div class="content">
+        <div id="leftCol">
+        <div class="tripBox">
+            <img src="images/dayTrip.jpg" alt="Rafting in yellow Raft on whitewater">
+        <table>
+            <thead>
+               
+            <td colspan="2">Day Trip</td>
+           
+        </thead>
+        
+            <tbody>
+                <tr>
+                    <td colspan="2" rowspan="2">This trip is designed for newer adventurers, and is especially great for some family fun. This trip still features some exciting whitewater, but is much more tame then our other trips</td>
+                </tr> 
+                <tr></tr>
+                <tr>
+                    
+                    <td>Length:</td>
+                    <td>1 Day</td>
+                
+                </tr>
+                <tr>
+                    <td>Skill Level:</td>
+                    <td>Beginner</td>
+                    
+                </tr>
+                <tr>
+                    <td>Cost:</td>
+                    <td>$97</td>
+                   
+                </tr>
+               
+        </tbody>
+        
+        </table>
+    </div>
+    <div class="tripBox">
+        <img src="images/overnightTrip.jpg" alt="camping at night near water">
+    <table>
+        <thead>
+           
+        <td colspan="2">Overnight Trip</td>
+       
+    </thead>
+    
+        <tbody>
+            <tr>
+                <td colspan="2" rowspan="2">This trip is designed for those with some whitewater experience. It features a few more challenging rapids, but it is one of a kind experience to camp along the river. </td>
+            </tr> 
+            <tr></tr>
+            <tr>
+                
+                <td>Length:</td>
+                <td>2 Day</td>
+            
+            </tr>
+            <tr>
+                <td>Skill Level:</td>
+                <td>Intermediate</td>
+                
+            </tr>
+            <tr>
+                <td>Cost:</td>
+                <td>$311</td>
+               
+            </tr>
+           
+    </tbody>
+    
+    </table>
+</div>
+<div class="tripBox">
+    <img src="images/weekTrip.jpg" alt="two Kayaks in calm water">
+<table>
+    <thead>
+       
+    <td colspan="2">Week Trip</td>
+   
+</thead>
+
+    <tbody>
+        <tr>
+            <td colspan="2" rowspan="2">This trip is designed for whitewater enthusiasts, it features high intensity rapids that are sure to trill. Join us for the whitewater vacation of a life time!</td>
+        </tr> 
+        <tr></tr>
+        <tr>
+            
+            <td>Length:</td>
+            <td>5 Day</td>
+        
+        </tr>
+        <tr>
+            <td>Skill Level:</td>
+            <td>Advanced</td>
+            
+        </tr>
+        <tr>
+            <td>Cost:</td>
+            <td>$1,254</td>
+           
+        </tr>
+       
+</tbody>
+
+</table>
+</div>
+</div>
+<form name="bookNow" action="reservationThankYou.html">
+        <fieldset>
+            <h3>Book Now</h3> 
+<h4>Adventurer's Information</h4>
+            <label>Full Name:<br>
+                <input type="text" name="name" placeholder="Your Name" pattern="[A-Za-z ]{5,}" required>
+            </label><br>
+            <label>Phone:<br>
+                <input type="tel" name="phone" placeholder="###-###-####" required>
+            </label><br>
+
+
+            <label for="email">eMail:<br>
+                <input type="email" name="email" id="email" placeholder="user@email.org"></label><br>
+                <h4>Trip Selection</h4>
+                <label for="theDate"> Trip date:<br>
+                    <input type="date" name="theDate" id="theDate"></label><br>
+                    <label>Type of Adventure <em>(Choose one)</em></label>
+                        <div class="selection">
+                            <label for="rafting"><input type="radio" id="rafting" name="type" value="rafting" checked>
+                                Rafting</label>
+                        </div>
+                        
+                        <div class="selection">
+                            <input type="radio" id="kayaking" name="type" value="kayaking">
+                            <label for="kayaking">Kayaking</label>
+                        </div>
+                    <label for="adventure">Select an adventure:</label><br>
+
+                    <select id="adventure">
+                        <option value="default" disabled>Select adventure...</option>
+                        <option value="Day trip">Day Trip</option>
+                        <option value="Weekend trip">Overnight Trip</option>
+                        <option value="Week trip">Week Trip</option>
+
+                    </select>
+                    <label><br>Additional Comments:<br>
+                        <textarea name="comment">Enter text here...</textarea>
+                        </label>
+
+                        <div id="submitButton">
+                            <input id="submit" type="submit" value="Submit">
+                        </div>
+        </fieldset>
+        </form>
+    </div>
+        </main>
+        
+        <footer>
+            Salmon River Adventures  |  1000 S Main St., Riggins, ID  |  (208) 543-7864  |  <a href="links.html">Resources</a>
+        </footer>
+
+        <script src="js/menu.js"></script>
+        <script src="js/weather.js"></script>
+       
+    </body>
+    </html>

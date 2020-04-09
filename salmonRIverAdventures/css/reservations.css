@@ -1,0 +1,83 @@
+fieldset{
+    border: none;
+    
+    line-height: 2em;
+    
+    margin-right: 0em;
+}
+
+.content {
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+    width: 320px;
+    margin-top: -1.25em;
+    
+  }
+  table td {
+    border: 1px solid black;
+    padding: .5em;
+  }
+
+  thead {
+      font-size: 115%;
+      text-align: center;
+      font-weight: bold;
+      
+  }
+
+  .tripBox img {
+      width: 300px;
+      margin: 0 5% 2em 0;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+  }
+
+  .tripBox{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 2em;
+      margin-left: auto;
+      justify-content: center;
+      
+     
+  }
+  #weatherSum{
+    display: none;
+}
+ 
+
+  @media only screen and (min-width: 737px)
+        {
+            .tripBox{
+                flex-wrap: nowrap;
+                margin-left: 2em;
+            }
+
+            #weatherSum{
+                display:block;
+                margin-top: -20%
+            }
+
+            table {
+                width: 400px;
+            }
+        }
+        @media only screen and (min-width: 1153px)
+    {
+        .content{
+        flex-wrap: nowrap;
+        }
+
+        table {
+            width: 500px;
+        }
+
+        .tripBox img {
+            width: 410px;
+        }
+    
+    }

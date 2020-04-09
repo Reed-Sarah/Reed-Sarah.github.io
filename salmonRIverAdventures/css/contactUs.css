@@ -1,0 +1,55 @@
+.content
+{
+    
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.box {
+    
+    display: inline-block;
+}
+
+#contactInfo {
+    
+    padding-top: 7%;
+    vertical-align: top;
+    
+    
+    padding-left: 2em;
+}
+
+iframe{
+    width: 360px;
+    height: 400px;
+    margin-bottom: 1em;;
+}
+
+
+fieldset{
+    border: none;
+}
+
+#weatherSum{
+    display:none;
+}
+
+@media only screen and (min-width: 737px)
+{
+    iframe{
+        width: 600px;
+        height: 600px;
+    }
+
+    #weatherSum{
+        display:block;
+        margin-top: -20%
+    }
+}
+@media only screen and (min-width: 1153px)
+{
+    iframe{
+        width: 880px;
+    }
+}

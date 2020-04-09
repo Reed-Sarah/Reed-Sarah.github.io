@@ -1,0 +1,43 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+   
+}
+
+p {
+    text-align: center;
+    margin: .75em 3em;
+}
+
+#weatherSum{
+    display:none;
+     
+}
+.content img {
+
+width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    display: block;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 737px)
+    {
+        .content{
+        grid-template-columns: 1fr 1fr;
+        }
+
+        #weatherSum{
+            display:block;
+            margin-top: -20%
+        }
+    }
+
+    @media only screen and (min-width: 1153px)
+    {
+        .content{
+            grid-template-columns: 1fr 1fr 1fr;
+            }
+    }

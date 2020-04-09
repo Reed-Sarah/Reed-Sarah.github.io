@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <title>Salmon River Adventures - Home</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Salmon River Adventures Home Page"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+ 
+    
+  <header>
+      <img id="logo" src="images/salmonLogo.png" alt="Salmon River Adventures Logo">
+      <h1>Salmon River<br>Adventures</h1>
+     
+    <div id="backgroundBanner">
+     <div id="opacity"></div>
+     <img id="banner" src="images/salmonBanner.jpg" alt="mountain scene with river" sizes = "95vw"
+                srcset="images/salmonBanner500.jpg 500w,
+                        images/salmonBanner750.jpg 750w,
+                       images/salmonBanner960.jpg 960w">
+  </div>
+    </header>
+  <main>
+   <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li> <a href="index.html" class="active">Home</a></li>
+                <li> <a href="riverGuides.html">River Guides</a></li>
+                <li> <a href="reservations.html">Reservations</a></li>
+                <li> <a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav> 
+        <div id="call">Book Your Adventure Today!</div>
+        <h2>Home Page</h2> 
+        <div id="weatherSum">
+        <h3>Riggins, Idaho</h3>
+        <div id="line"></div>
+        <div id="list">
+        <div id="sumFirst">Currently:<br>Temperature:<br>Wind Chill:<br>Humidity:<br>Wind Speed:</div>
+        <div id= "sumSec"><span id="current"></span><br><span id="temp"></span>&#00176;F<br><span id="windChill"></span><br><span id="humidity"></span>%<br><span id="windSpeed"></span>mph</div>
+    </div></div>
+        <div class="content">
+            <h3 class="medLabel">Rafting</h3>
+            <div class="infoBox" id="rafting">
+            <h3 >Rafting</h3>
+                
+                <img src="images/rafting800.jpg" alt="two rafts in whitewater">
+                <p>Rafting equipment has continuously evolved and developed significantly from old rubber WW II era military surplus rafts. Modern whitewater rafts are typically made with advanced nylon or Kevlar infused plastics like PVC or urethane; though many of the more entry-level low-cost manufacturers still use a glued rubber. Plastic is generally more durable, longer-lasting, and just as easy to repair compared to older rubber rafts. Paddles and oars are the typical means of propulsion for rafts and come in many sizes and varieties with specific river conditions in mind. - Wikipedia</p>
+            </div>
+            <h3 class="medLabel">Kayaking</h3>
+            <div class="infoBox" id="kayaking">
+                <h3>Kayaking</h3>
+                <img src="images/kayaking800.jpg" alt="man kayaking in whitewater">
+                <p>Kayaks were created thousands of years ago by the Inuit, formerly known as Eskimos, of the northern Arctic regions. They used driftwood and sometimes the skeleton of whale, to construct the frame of the kayak, and animal skin, particularly seal skin was used to create the body. The main purpose for creating the kayak, which literally translates to "hunter's boat" was for hunting and fishing. The kayak's stealth capabilities allowed for the hunter to sneak up behind animals on the shoreline and successfully catch their prey. - Wikipedia</p>
+            </div>
+        </main>
+        
+        <footer>
+            Salmon River Adventures  |  1000 S Main St., Riggins, ID  |  (208) 543-7864  |  <a href="links.html">Resources</a>
+        </footer>
+
+        <script src="js/menu.js"></script>
+        <script src="js/weather.js"></script>
+    </body>
+    </html>
