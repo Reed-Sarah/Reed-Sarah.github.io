@@ -1,0 +1,35 @@
+{
+    "Guides":[
+    {
+        "firstName": "Andrew",
+        "lastName": "Jackson",
+        "certificationLevel": 4,
+        "picture":"images/andrew.jpg",
+        "experience": 5,
+        "email": "andrew.Jackson55@gmail.com",
+        "bio": "Andrew has always loved the outdoors, and the first time he went rafting he fell in love. He loves the river and rush of the rapids."
+    }
+,
+    {
+        "firstName": "Sam",
+        "lastName": "Harrison",
+        "certificationLevel": 10,
+        "picture":"images/sam.jpg",
+        "experience": 40,
+        "email": "samharrison@gmail.com",
+        "bio": "Sam has been a guide on the Salmon since he was a teen. He grew up on the Salmon River, and knows it like the back of his hand."
+
+    }
+,
+    {
+        "firstName": "Melony",
+        "lastName": "Jones",
+        "certificationLevel": 7,
+        "picture":"images/melony.jpg",
+        "experience": 8,
+        "email": "jonesmel23@gmail.com",
+        "bio": "Melony is a collage student majoring in Biology. Her summers have been filled with whitewater for as long as she can remember and she wouldn't want it any other way. "
+    }
+
+    ]
+}
